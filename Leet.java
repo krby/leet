@@ -16,7 +16,8 @@ public class Leet {
             String[] sentenceArr = sentence.toLowerCase().split(" ");
             Arrays.sort(sentenceArr);
 
-            Integer ind = map.get(Arrays.hashCode(sentenceArr)); // must be integer to match hashmap type
+            Integer ind = map.get(Arrays.hashCode(sentenceArr)); 
+            // using Integer class because it avoids adding a map.containsKey check and using primitive int
             // https://stackoverflow.com/questions/1780385/java-hashmapstring-int-not-working#1780390
 
             // if ind is null, we have never seen the sentence before so it is unique
