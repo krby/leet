@@ -283,7 +283,7 @@ public class Leet {
     }
 
     public static void main(String []args) {
-        System.out.println( Arrays.toString(primePair(30)) );
-        System.out.println( Arrays.toString(primePair(74)) );
+        Graph g = new Graph(5);
+        System.out.println(g.nodes[0].children);
     }
 }
